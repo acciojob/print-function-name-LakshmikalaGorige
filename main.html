@@ -8,8 +8,23 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <title>Display Function Name</title>
+</head>
+<body>
+
+    <script>
+        var functionName = function() {
+    alert("Function Name: " + arguments.callee.name);
+};
+
+// Using a function declaration with a name
+function functionName() {
+    alert("Function Name: " + arguments.callee.name);
+}
+
+// Call the function
+functionName();
+    </script>
 
 </body>
 
